@@ -1,0 +1,13 @@
+#rankConfig
+
+# regex
+target_tag=<spanclass="rating_per">.+?</span>
+need_tag=rating_per:<spanclass="rating_per">.+?</span>
+remove_tag=<(?!a).+?>
+
+# target tag
+start_tag=<spanclass="rating_per">
+end_tag=</span>
+
+# filter html tag
+filters=html,meta,head,title,link,script,style,!

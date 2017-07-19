@@ -1,0 +1,20 @@
+# config
+
+# url
+url=https://movie.douban.com/top250?start={0}&filter=
+
+#count
+count=25
+pre=25
+
+# regex
+need_tag=title:<spanclass="title">.+?</span>,rank:<spanclass="rating_num".+?</span>,rank_num:<span>.+?</span>,src:href="[a-zA-z]+://[^\s]*"
+remove_tag=<(?!a).+?>,href="," class
+target_tag=<li>.+?</li>
+
+# target tag
+start_tag=<olclass="grid_view">
+end_tag=</ol>
+
+# filter html tag
+filters=html,meta,head,title,link,script,style,!
